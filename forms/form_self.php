@@ -1,5 +1,6 @@
 <?php
 
+error_reporting (0);
 $genere="$_GET[genere]";
 $permisos="$_GET[permisos]";
 $contrassenya="$_GET[contrassenya]";
