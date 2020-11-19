@@ -1,5 +1,5 @@
 <?php
-//Funció per sumar
+//Funció per sumar 
 function suma($valor1, $valor2) {
     return ($valor1 + $valor2);
 }
