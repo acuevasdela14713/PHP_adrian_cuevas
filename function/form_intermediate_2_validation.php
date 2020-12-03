@@ -1,4 +1,5 @@
 <?php
+//visusi corrections - OK
 //Funcio 1
 $nom="Adrian Cuevas de la Cruz";
 function fullNameSplit($nom){
