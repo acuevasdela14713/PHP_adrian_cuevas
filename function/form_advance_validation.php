@@ -1,5 +1,5 @@
 <?php
-
+//visusi corrections - OK
 function fullNameSplit($fullName){
   $separat=explode(" ",$fullName);
   return $separat;
