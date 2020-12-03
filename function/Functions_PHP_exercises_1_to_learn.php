@@ -1,4 +1,5 @@
 <?php
+///visusi corections - OK
 //Funció per sumar 
 function suma($valor1, $valor2) {
     return ($valor1 + $valor2);
