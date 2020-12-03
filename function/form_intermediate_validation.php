@@ -1,5 +1,5 @@
 <?php
-
+//visusi corections - OK
 //Funcio 1
 function email_validacio($valor){
   return filter_var($valor,FILTER_VALIDATE_EMAIL);
