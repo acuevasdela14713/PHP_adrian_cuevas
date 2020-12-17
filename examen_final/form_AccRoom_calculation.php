@@ -1,4 +1,5 @@
 <?php
+//visusi corrections
 //calcular el preu del tipus d'habitació i retornar un valor numeric
 //si es single el preu es 30
 //si es double el preu es 50
@@ -61,7 +62,7 @@ function viewsPriceCalculation($views){
 //emprar una de les dues funcions vistes a classe per a saber quants elements hi ha a un array
 function foodServicesPriceCalculation($foodServices){
   $nombreDeServies=count($foodServices);
-  if ($nombreDeServies == 5)
+  if ($nombreDeServies == 5)//visusi corrections - $nombreDeServies se pot emprar per a calcular la multiplicació, ja que conté el valor numeric
     return 5*20;
   elseif ($nombreDeServies == 4)
     return 4*20;

@@ -29,7 +29,7 @@ if ($_GET){
   }
   //Si la variable $gender ha sigut inicialitzada i no es null
   //calcular del preu del genere de l'habitació
-  if (isset($gender) and $gender != null){
+  if (isset($gender) and $gender != null){//visusi corrections - amb isset ja s'avalua si es o no null a banda de estar inicialitzada
     //cridar a la funcio genderPriceCalculation amb els parametres requerits
     $genderPrice=genderPriceCalculation($gender);
   }
@@ -57,9 +57,9 @@ if ($_GET){
 
   //si els preus de les vistes i els serveis de restauracio diferent de 0
   //sumar-los i assignar el resultat a la variable $partialPrice2
-  if ($viewsPrice > 0 and $foodServicesPrice > 0)
+  if ($viewsPrice > 0 and $foodServicesPrice > 0)// visusi corrections - condició ha de ser diferent !=
     $partialPrice2=$viewsPrice + $foodServicesPrice;
-  //sino asignar valor 0 a $partialPrice2
+  //sino asignar valor 0 a $partialPrice2//visusi corrections - falta else
 
 
   //calcul del preu final
@@ -109,7 +109,7 @@ if ($_GET){
 
     <?php
     //Si s'ha calculat el preu, es a dir si $finalPrice no es null i té un valor
-    if ($finalPrice != null){
+    if ($finalPrice != null){//visusi corrections - Falta isset
         //Mostrar el missatge amb el preu total
         echo "Price: $finalPrice";
     }
